@@ -183,7 +183,7 @@
                   </div>
                 </div>
 
-                <a class="flex justify-center items-center px-3 font-medium rounded backdrop-blur-xl h-8.5 transition-all" href="javascript:void(0)" style="background:rgba(255,255,255,0.15)" onmouseenter="this.style.background='#2D2D2D';this.style.color='#fff'" onmouseleave="this.style.background='rgba(255,255,255,0.15)';this.style.color=''">
+                <a class="flex justify-center items-center px-3 font-medium rounded backdrop-blur-xl h-8.5 transition-all" href="javascript:void(0)" style="background:rgba(255,255,255,0.15)" @mouseenter="type === 'light' ? ($el.style.background='#fff', $el.style.color='#2D2D2D') : ($el.style.background='#2D2D2D', $el.style.color='#fff')" @mouseleave="$el.style.background='rgba(255,255,255,0.15)'; $el.style.color=''">
         Sign in      </a>
 
       </nav>        
@@ -1405,7 +1405,7 @@ procurement system worldwide</h2>                      </div>
       </nav>
 
       <div class="lg:order-first">
-        © 2026 Lio Technologies, Inc.      </div>
+        © 2026 nexu Technologies, Inc.      </div>
     </div>
   </div>
 </footer>
