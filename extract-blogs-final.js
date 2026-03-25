@@ -34,12 +34,25 @@ function collectImages(a) {
   if (cover) imgs.add(cover);
   const allSections = [...(a.sections || []), ...(a.sections_zh || [])];
   for (const s of allSections) {
-    if (!s.text) continue;
-    const re = /src=['"]([^'"]+)['"]/g;
-    let m2;
-    while ((m2 = re.exec(s.text)) !== null) imgs.add(m2[1]);
+    if (!s.text && !s.src) continue;
+    if (s.src) imgs.add(s.src);
+    if (s.text) {
+      const re = /src=['"]([^'"]+)['"]/g;
+      let m2;
+      while ((m2 = re.exec(s.text)) !== null) imgs.add(m2[1]);
+    }
   }
   return [...imgs];
+}
+
+function renderSections(sections) {
+  let md = '';
+  for (const s of (sections || [])) {
+    if (s.type === 'h2') md += `## ${stripHtml(s.text)}\n\n`;
+    else if (s.type === 'img') md += `![${s.alt || ''}](${path.basename(s.src)})\n\n`;
+    else md += stripHtml(s.text) + '\n\n';
+  }
+  return md;
 }
 
 articles.forEach((a, i) => {
@@ -67,40 +80,40 @@ articles.forEach((a, i) => {
   const cover = extractBg(a.bg);
   const coverFile = cover ? path.basename(cover) : null;
 
-  let md = '---\n';
-  md += `id: ${a.id}\n`;
-  md += `slug: ${a.slug}\n`;
-  md += `category: ${a.category}\n`;
-  md += `title: "${a.title}"\n`;
-  md += `title_zh: "${a.title_zh}"\n`;
-  md += `date: "${a.date}"\n`;
-  md += `date_zh: "${a.date_zh}"\n`;
-  if (coverFile) md += `cover: ${coverFile}\n`;
-  md += `featured: ${!!a.featured}\n`;
-  md += '---\n\n';
+  // English MD
+  let enMd = '---\n';
+  enMd += `id: ${a.id}\n`;
+  enMd += `slug: ${a.slug}\n`;
+  enMd += `category: ${a.category}\n`;
+  enMd += `title: "${a.title}"\n`;
+  enMd += `date: "${a.date}"\n`;
+  if (coverFile) enMd += `cover: ${coverFile}\n`;
+  enMd += `featured: ${!!a.featured}\n`;
+  enMd += '---\n\n';
+  enMd += `# ${a.title}\n\n`;
+  if (a.desc) enMd += `> ${a.desc}\n\n`;
+  enMd += renderSections(a.sections);
+  fs.writeFileSync(path.join(folderPath, `${a.slug}.md`), enMd, 'utf-8');
 
-  md += `# ${a.title}\n\n`;
-  if (a.desc) md += `> ${a.desc}\n\n`;
+  // Chinese MD
+  let zhMd = '---\n';
+  zhMd += `id: ${a.id}\n`;
+  zhMd += `slug: ${a.slug}\n`;
+  zhMd += `category: ${a.category}\n`;
+  zhMd += `title: "${a.title_zh}"\n`;
+  zhMd += `date: "${a.date_zh}"\n`;
+  if (coverFile) zhMd += `cover: ${coverFile}\n`;
+  zhMd += `featured: ${!!a.featured}\n`;
+  zhMd += '---\n\n';
+  zhMd += `# ${a.title_zh}\n\n`;
+  if (a.desc_zh) zhMd += `> ${a.desc_zh}\n\n`;
+  zhMd += renderSections(a.sections_zh);
+  fs.writeFileSync(path.join(folderPath, `${a.slug}.zh.md`), zhMd, 'utf-8');
 
-  for (const s of (a.sections || [])) {
-    if (s.type === 'h2') md += `## ${stripHtml(s.text)}\n\n`;
-    else if (s.type === 'img') md += `![](${path.basename(s.src)})\n\n`;
-    else md += stripHtml(s.text) + '\n\n';
-  }
-
-  md += '---\n\n';
-  md += `# ${a.title_zh}\n\n`;
-  if (a.desc_zh) md += `> ${a.desc_zh}\n\n`;
-
-  for (const s of (a.sections_zh || [])) {
-    if (s.type === 'h2') md += `## ${stripHtml(s.text)}\n\n`;
-    else if (s.type === 'img') md += `![](${path.basename(s.src)})\n\n`;
-    else md += stripHtml(s.text) + '\n\n';
-  }
-
-  const mdPath = path.join(folderPath, `${a.slug}.md`);
-  fs.writeFileSync(mdPath, md, 'utf-8');
-  console.log(`✓ ${folderName}/ — ${images.length} images`);
+  console.log(`✓ ${folderName}/`);
+  console.log(`    ${a.slug}.md`);
+  console.log(`    ${a.slug}.zh.md`);
+  console.log(`    ${images.length} images`);
 });
 
-console.log(`\nDone. ${articles.length} articles in ${outRoot}`);
+console.log(`\nDone. ${articles.length} articles × 2 languages = ${articles.length * 2} MD files`);
