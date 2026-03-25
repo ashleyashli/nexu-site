@@ -14,6 +14,12 @@ featured: true
 
 > An open-source desktop client that runs your OpenClaw Agent in WeChat, Feishu, Slack & Discord. Double-click install, BYOK, local-first. Top-tier models free during beta.
 
+🦞 **The smoothest way to connect OpenClaw to WeChat**: Scan, connect, and go.
+
+🎉 **Beta Perk**: During the beta period, top-tier models like Claude, GPT, Gemini, Kimi, GLM, and more are **completely free with unlimited usage**. [Download and try now →](https://nexu.io)
+
+## What is nexu?
+
 **nexu** (next to you) is an open-source desktop client that runs your **OpenClaw 🦞** Agent directly inside WeChat, Feishu, Slack, Discord, and other IM channels.
 
 **WeChat + OpenClaw supported** — works with WeChat 8.0.7 OpenClaw plugin. Click connect, scan with WeChat, and start chatting with your AI Agent.
@@ -21,8 +27,6 @@ featured: true
 **Download and go** — graphical setup, built-in Feishu Skills, multi-model support (Claude / GPT / Gemini and more), and bring your own API Key.
 
 Once connected to IM, your Agent is online 24/7 — chat from your phone anytime, anywhere. All data stays on your machine. Your privacy, fully in your control.
-
-🎉 **Beta Perk**: During the beta period, top-tier models like Claude, GPT, Gemini, Kimi, GLM, and more are **completely free with unlimited usage**. [Download and try now →](https://nexu.io)
 
 ## Difference from Other Solutions
 
@@ -74,6 +78,20 @@ nexu is built for **One Person Company** and small teams — one person, one AI 
 
 Go to [nexu.io](https://nexu.io) or [GitHub Releases](https://github.com/nexu-io/nexu/releases), download the Mac installer, and launch nexu. Sign in with your nexu account for instant access to supported models, or add your own API Key and use the client without an account.
 
+## FAQ
+
+**Q: Is nexu free?** The client is completely free and open-source (MIT). Built-in top-tier models are available for you to use, and you can also choose to bring your own API Key.
+
+**Q: Which operating systems are supported?** macOS 12+ (Apple Silicon) is supported today. Windows and macOS Intel are in development — email [support@nexu.ai](mailto:support@nexu.ai) for updates.
+
+**Q: Which IM platforms are supported?** WeChat, Feishu, Slack, and Discord are built in and work out of the box.
+
+**Q: Is my data safe?** All data stays on your machine. nexu does not host your business data. The source code is open for audit.
+
+**Q: Can I use my own API Key?** Yes. Add your API Key and use the client without creating an account or logging in.
+
+**Q: What do I need to connect WeChat?** nexu works with the WeChat 8.0.7 OpenClaw plugin. Click connect, scan with WeChat, and you are good to go — no extra setup required.
+
 ## Open Source
 
 nexu is open-sourced under the **MIT License** — free to use, modify, distribute, and build upon for any purpose, including commercial use. We believe open source is the future of AI infrastructure. Fork it, contribute, or build your own product on top of nexu.
@@ -86,6 +104,12 @@ Explore the code and contribute on [GitHub](https://github.com/nexu-io/nexu).
 
 > 开源桌面客户端，让你的 OpenClaw Agent 在微信、飞书、Slack、Discord 里直接运行。双击安装、自带 Key、数据本地优先。公测期间顶级模型完全免费。
 
+🦞 **最丝滑接入微信 OpenClaw**：扫码即连，开箱即用。
+
+🎉 **内测福利**：内测期间，Claude、GPT、Gemini、Kimi、GLM 等顶级模型**全部免费、无限量使用**。[立即下载体验 →](https://nexu.io)
+
+## nexu（奈苏）是什么？
+
 **nexu**（奈苏，next to you）是一个开源桌面客户端，让你的 **OpenClaw 🦞** Agent 直接运行在微信、飞书、Slack、Discord 等 IM 中。
 
 **已支持微信接入 OpenClaw** —— 适配微信 8.0.7 OpenClaw 插件，点击连接、微信扫码，即可在微信中与 AI Agent 对话。
@@ -93,8 +117,6 @@ Explore the code and contribute on [GitHub](https://github.com/nexu-io/nexu).
 下载即用，图形化配置，内置飞书 Skills，支持 Claude / GPT / Gemini 等多模型与自带 API Key。
 
 连接 IM 后，Agent 7×24 小时在线——手机上随时对话，不受桌面限制。所有数据保存在本机，隐私安全，完全可控。
-
-🎉 **内测福利**：内测期间，Claude、GPT、Gemini、Kimi、GLM 等顶级模型**全部免费、无限量使用**。[立即下载体验 →](https://nexu.io)
 
 ## 与常见方案的区别
 
@@ -146,9 +168,23 @@ nexu 面向 **One Person Company** 与小团队，让一个人就能拥有一支
 
 打开 [nexu 官网](https://nexu.io)或 [GitHub Releases](https://github.com/nexu-io/nexu/releases)，下载 Mac 安装包并启动 nexu。使用 nexu 账号登录，立即使用已支持的模型；也可添加自带 API Key，无需账号即可使用。
 
+## FAQ
+
+**Q: nexu 免费吗？**客户端完全免费且开源（MIT）。内置的顶级模型供你使用，并且可以选择自带 API Key 进行使用。
+
+**Q: 支持哪些操作系统？**目前支持 macOS 12+（Apple Silicon）。Windows 和 macOS Intel 版本正在开发中，可邮件 [support@nexu.ai](mailto:support@nexu.ai) 获取进展。
+
+**Q: 支持哪些 IM 平台？**内置支持微信、飞书、Slack、Discord，开箱即用。
+
+**Q: 我的数据安全吗？**所有数据保存在本机，nexu 不托管你的业务数据。源码开源可审计。
+
+**Q: 可以使用自己的 API Key 吗？**可以。填入你的 API Key 即可使用，无需注册账号或登录。
+
+**Q: 微信接入需要什么条件？**适配微信 8.0.7 OpenClaw 插件，点击连接、微信扫码即可，无需额外配置。
+
 ## 开源协议
 
-nexu 基于 **MIT License** 开源——你可以自由使用、修改、分发，包括商业用途。我们相信开源是 AI 基础设施的未来。欢迎 fork、贡献、或基于 nexu 构建你自己的产品。
+nexu 基于 **MIT License** 开源——你可以自由使用、修改、分发。我们相信开源是 AI 基础设施的未来。欢迎 fork、贡献、或基于 nexu 构建你自己的产品。
 
 在 [GitHub](https://github.com/nexu-io/nexu) 上探索代码和参与贡献。
 

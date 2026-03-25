@@ -14,69 +14,65 @@ featured: false
 
 > Create a Discord application, enable Message Content Intent, invite the bot — your AI agent is ready for your community.
 
-Only an Application ID and Bot Token needed to connect a Discord bot to nexu.
+All you need is an Application ID and a Bot Token to connect your Discord bot to nexu.
 
 ## Step 1: Create a Discord Application
 
-Go to the [Discord Developer Portal](https://discord.com/developers/applications), click "New Application."
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications) and click "New Application".
 
 ![](discord-step1-applications.webp)
 
-Fill in the application name, click "Create."
+2. Enter the application name and click "Create".
 
 ![](discord-step1-create-app.webp)
 
-Go to "General Information" and copy the Application ID.
+3. On the "General Information" page, copy and save the **Application ID**.
 
 ![](discord-step1-general-info.webp)
 
-In the left menu, go to "Bot", click "Reset Token", and copy the Bot Token.
+4. In the left menu, go to "Bot", click "Reset Token" to generate a Bot Token, and copy it.
 
 ![](discord-step3-bot-token.webp)
 
-## Step 2: Connect in nexu
+## Step 2: Add Credentials to nexu
 
-Paste your App ID and Bot Token in nexu's Discord configuration, click "Connect."
+Open the nexu client, enter the App ID and Bot Token in the Discord channel settings, and click "Connect".
 
 ![](discord-step2-nexu-connect.webp)
 
-## Step 3: Configure Permissions and Invite
+## Step 3: Configure Permissions and Invite the Bot
 
-Back in the Discord Developer Portal, in "Bot" page, enable "Message Content Intent" under Privileged Gateway Intents.
+1. Back in the Discord Developer Portal, on the "Bot" page, enable the following Privileged Gateway Intents: **Message Content Intent**.
 
 ![](discord-step4-intents.webp)
 
-Go to "OAuth2" → "URL Generator." Check "bot" and "applications.commands" under Scopes.
+2. In the left menu, go to "OAuth2". Under Scopes, select `bot`. Under Bot Permissions, select `Administrator`.
 
 ![](discord-step5-scopes.webp)
 
-Under Bot Permissions, check: View Channels, Send Messages, Read Message History, Embed Links, Attach Files, Add Reactions, Use External Emojis, Use External Stickers.
-
-![](discord-step5-permissions.webp)
-
-Copy the generated URL at the bottom.
+3. Copy the generated URL at the bottom of the page and open it in your browser.
 
 ![](discord-step5-generated-url.webp)
 
-Open the URL in your browser, select your server, click "Continue."
+4. Select your server and click "Continue".
 
 ![](discord-step3-select-server.webp)
 
-Confirm the permissions, click "Authorize."
+5. Confirm the permissions and click "Authorize" to add the bot.
 
 ![](discord-step3-authorize.webp)
 
 ## Step 4: Test
 
-After connecting, click "Chat" in nexu to jump to Discord and start chatting with your AI bot.
+Once connected, click "Chat" in the nexu client to jump to Discord and chat with your bot 🎉
 
 ![](discord-step4-connected.webp)
 
 ## FAQ
 
-**Do I need a public server?** No. nexu uses Discord Gateway (WebSocket) — no public IP or callback URLs needed.
+**Q: Do I need a public server?** No. nexu uses the Discord Gateway (WebSocket) — no public IP or callback URL required.
 
-**Bot not responding?** Make sure Message Content Intent is enabled, otherwise the bot cannot read message content.
+**Q: The bot doesn't reply to messages?** Make sure you've enabled Message Content Intent, otherwise the bot cannot read message content.
 
 ---
 
@@ -88,19 +84,19 @@ After connecting, click "Chat" in nexu to jump to Discord and start chatting wit
 
 ## 第一步：创建 Discord 应用
 
-打开 [Discord Developer Portal](https://discord.com/developers/applications)，点击「New Application」。
+1. 打开 [Discord Developer Portal](https://discord.com/developers/applications)，点击「New Application」。
 
 ![](discord-step1-applications.webp)
 
-填写应用名称，点击「Create」。
+2. 填写应用名称，点击「Create」。
 
 ![](discord-step1-create-app.webp)
 
-进入「General Information」页面，复制保存 Application ID。
+3. 进入「General Information」页面，复制保存：**Application ID**
 
 ![](discord-step1-general-info.webp)
 
-在左侧菜单进入「Bot」，点击「Reset Token」生成 Bot Token，复制保存。
+4. 在左侧菜单进入「Bot」，点击「Reset Token」生成 Bot Token，复制保存：**Bot Token**
 
 ![](discord-step3-bot-token.webp)
 
@@ -112,27 +108,23 @@ After connecting, click "Chat" in nexu to jump to Discord and start chatting wit
 
 ## 第三步：配置权限并邀请机器人
 
-回到 Discord Developer Portal，在「Bot」页面下方开启 Privileged Gateway Intents 中的 Message Content Intent。
+1. 回到 Discord Developer Portal，在「Bot」页面下方开启以下 Privileged Gateway Intents：**Message Content Intent**
 
 ![](discord-step4-intents.webp)
 
-在左侧菜单进入「OAuth2」→「URL Generator」，勾选 Scopes 中的 bot 和 applications.commands。
+2. 在左侧菜单进入「OAuth2」，在 Scopes 中勾选 `bot`，在下方 Bot Permissions 中勾选 `Administrator`。
 
 ![](discord-step5-scopes.webp)
 
-在下方 Bot Permissions 中勾选：View Channels、Send Messages、Read Message History、Embed Links、Attach Files、Add Reactions、Use External Emojis、Use External Stickers。
-
-![](discord-step5-permissions.webp)
-
-复制页面底部生成的 URL。
+3. 复制页面底部生成的 URL，在浏览器中打开。
 
 ![](discord-step5-generated-url.webp)
 
-在浏览器中打开该 URL，选择你的服务器，点击「Continue」。
+4. 选择你的服务器，点击「Continue」。
 
 ![](discord-step3-select-server.webp)
 
-确认权限列表，点击「Authorize」，授权机器人加入。
+5. 确认权限列表，点击「Authorize」，授权机器人加入。
 
 ![](discord-step3-authorize.webp)
 
@@ -144,7 +136,7 @@ After connecting, click "Chat" in nexu to jump to Discord and start chatting wit
 
 ## 常见问题
 
-**需要公网服务器吗？**不需要。nexu 使用 Discord Gateway（WebSocket），无需公网 IP 或回调地址。
+**Q: 需要公网服务器吗？**不需要。nexu 使用 Discord Gateway（WebSocket），无需公网 IP 或回调地址。
 
-**机器人没有回复消息？**请确认已开启 Message Content Intent，否则机器人无法读取消息内容。
+**Q: 机器人没有回复消息？**请确认已开启 Message Content Intent，否则机器人无法读取消息内容。
 
