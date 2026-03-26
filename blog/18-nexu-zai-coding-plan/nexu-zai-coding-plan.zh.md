@@ -4,11 +4,13 @@ slug: nexu-zai-coding-plan
 category: Announcements
 title: "nexu 新增 Z.AI Coding Plan——GLM 模型接入，Global/CN 双区切换"
 date: "2026年3月26日"
-cover: blog-release-v017.png
+cover: blog-cover-zai-zh.webp
 featured: false
 ---
 
 # nexu 新增 Z.AI Coding Plan——GLM 模型接入，Global/CN 双区切换
+
+![nexu 新增 Z.AI Coding Plan](blog-cover-zai-zh.webp)
 
 > 在 nexu 中快速接入智谱 Z.AI 的 GLM 模型。选择 Global 或 CN 区域，填入 API Key，GLM 模型即可在所有 IM 渠道中使用。
 
@@ -32,7 +34,7 @@ nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **Z.
 4. 输入你的 Z.AI API Key。
 5. 完成——GLM 模型已出现在模型选择器中。
 
-![nexu 设置页面显示 GLM 供应商，智谱 Coding Plan 和 Global/CN 区域切换](img/blog-zai-coding-zh.webp)
+![nexu 设置页面显示 GLM 供应商，智谱 Coding Plan 和 Global/CN 区域切换](blog-zai-coding-zh.webp)
 
 ## 你会得到什么
 

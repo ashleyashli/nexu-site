@@ -4,11 +4,13 @@ slug: nexu-zai-coding-plan
 category: Announcements
 title: "nexu Adds Z.AI Coding Plan — GLM Models with Global/CN Region Toggle"
 date: "MAR 26 '26"
-cover: blog-release-v017.png
+cover: blog-cover-zai-en.webp
 featured: false
 ---
 
 # nexu Adds Z.AI Coding Plan — GLM Models with Global/CN Region Toggle
+
+![nexu Adds Z.AI Coding Plan](blog-cover-zai-en.webp)
 
 > Quick-setup for Zhipu Z.AI GLM models in nexu. Choose Global or CN region, enter your API key, and GLM models are ready to use across all your IM channels.
 
@@ -32,7 +34,7 @@ nexu, the simplest open-source OpenClaw desktop client, adds a **Z.AI Coding Pla
 4. Enter your Z.AI API key.
 5. Done — GLM models appear in your model selector.
 
-![nexu Settings showing GLM provider with Z.AI Coding Plan and Global/CN region toggle](img/blog-zai-coding-en.webp)
+![nexu Settings showing GLM provider with Z.AI Coding Plan and Global/CN region toggle](blog-zai-coding-en.webp)
 
 ## What You Get
 

@@ -4,11 +4,13 @@ slug: nexu-openai-codex-oauth
 category: Announcements
 title: "用你的 ChatGPT 订阅在 nexu 里直接使用 GPT 模型——无需 API Key"
 date: "2026年3月26日"
-cover: blog-release-v017.png
+cover: blog-cover-openai-zh.webp
 featured: false
 ---
 
 # 用你的 ChatGPT 订阅在 nexu 里直接使用 GPT 模型——无需 API Key
+
+![在 nexu 里使用 ChatGPT](blog-cover-openai-zh.webp)
 
 > 如果你已经在付费使用 ChatGPT Plus 或 Pro，现在可以直接用 OpenAI 账号登录 nexu，一键接入 GPT 模型。不用申请 API Key，不用配置计费，不用进开发者后台。
 
@@ -38,7 +40,7 @@ nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **Op
 
 不用复制 API Key，不用配置计费。连接在应用重启后持续有效。
 
-![nexu 设置页面显示 OpenAI 供应商，使用 ChatGPT 登录按钮和 GPT 模型列表](img/blog-openai-oauth-zh.webp)
+![nexu 设置页面显示 OpenAI 供应商，使用 ChatGPT 登录按钮和 GPT 模型列表](blog-openai-oauth-zh.webp)
 
 ## 你会得到什么
 

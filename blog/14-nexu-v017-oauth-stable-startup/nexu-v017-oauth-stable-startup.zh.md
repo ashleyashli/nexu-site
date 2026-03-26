@@ -4,11 +4,13 @@ slug: nexu-v017-oauth-stable-startup
 category: Announcements
 title: "nexu v0.1.7：一键 OAuth 登录，启动稳如磐石"
 date: "2026年3月25日"
-cover: blog-release-v017.png
+cover: blog-cover-v017-zh.webp
 featured: false
 ---
 
 # nexu v0.1.7：一键 OAuth 登录，启动稳如磐石
+
+![一键 OAuth 登录](blog-cover-v017-zh.webp)
 
 > nexu——最简单的开源龙虾桌面客户端——现在支持一键登录 OpenAI 和 MiniMax，无需 API Key。v0.1.7 同时解决了白屏、渠道连接卡住、端口冲突等问题，无论上次如何关闭应用，启动都万无一失。
 

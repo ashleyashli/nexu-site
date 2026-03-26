@@ -186,7 +186,8 @@
         team_zh: '工程团队',
         label: 'March 2026',
         label_zh: '2026年3月',
-        bg: 'url(img/blog-release-v017.png) center/cover no-repeat',
+        bg: 'url(img/blog-cover-v017-en.webp) center/cover no-repeat',
+        bg_zh: 'url(img/blog-cover-v017-zh.webp) center/cover no-repeat',
         related: ['ann-openai-oauth', 'ann-minimax-oauth', 'ann-zai-coding'],
         sections: [
           { type: 'h2', text: 'Highlights' },
@@ -277,7 +278,8 @@
         team_zh: '工程团队',
         label: 'March 2026',
         label_zh: '2026年3月',
-        bg: 'url(img/blog-release-v017.png) center/cover no-repeat',
+        bg: 'url(img/blog-cover-openai-en.webp) center/cover no-repeat',
+        bg_zh: 'url(img/blog-cover-openai-zh.webp) center/cover no-repeat',
         related: ['ann-openai-oauth', 'ann-v017', 'ann-minimax-oauth'],
         sections: [
           { type: 'h2', text: 'What Changed' },
@@ -401,7 +403,8 @@
         team_zh: '工程团队',
         label: 'March 2026',
         label_zh: '2026年3月',
-        bg: 'url(img/blog-release-v017.png) center/cover no-repeat',
+        bg: 'url(img/blog-cover-zai-en.webp) center/cover no-repeat',
+        bg_zh: 'url(img/blog-cover-zai-zh.webp) center/cover no-repeat',
         related: ['ann-zai-coding', 'ann-v017', 'ann-minimax-oauth'],
         sections: [
           { type: 'h2', text: 'What Changed' },
@@ -1414,7 +1417,7 @@
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
           <template x-for="a in getFiltered()" :key="a.id">
             <article class="group flex flex-col cursor-pointer" @click="openArticle = a.id; location.hash = a.slug; window.scrollTo(0,0)">
-              <div :style="'aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:' + a.bg"></div>
+              <div :style="'aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:' + (lang==='zh' && a.bg_zh ? a.bg_zh : a.bg)"></div>
               <div class="flex flex-col gap-3" style="padding: 12px 4px;">
                 <div class="t-12" style="color:rgba(255,255,255,0.4);display:flex;align-items:center;gap:8px;">
                   <span x-text="t(a, 'label')"></span>
@@ -1447,7 +1450,7 @@
           <span class="t-12" style="color:rgba(255,255,255,0.4);margin-left:16px;" x-text="getCurrent() ? t(getCurrent(), 'team') : ''"></span>
         </div>
 
-        <div :style="'aspect-ratio:16/9;width:100%;border-radius:16px;overflow:hidden;margin-bottom:48px;background:' + (getCurrent() ? getCurrent().bg : '')"></div>
+        <div :style="'aspect-ratio:16/9;width:100%;border-radius:16px;overflow:hidden;margin-bottom:48px;background:' + (getCurrent() ? (lang==='zh' && getCurrent().bg_zh ? getCurrent().bg_zh : getCurrent().bg) : '')"></div>
 
         <div style="display:flex;flex-direction:column;gap:24px;">
           <template x-if="getCurrent()">
@@ -1490,7 +1493,7 @@
           <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
             <template x-for="a in getRelated()" :key="a.id">
               <div class="group cursor-pointer" @click="openArticle = a.id; location.hash = a.slug; window.scrollTo(0,0)">
-                <div :style="'aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:12px;background:' + a.bg"></div>
+                <div :style="'aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:12px;background:' + (lang==='zh' && a.bg_zh ? a.bg_zh : a.bg)"></div>
                 <p class="t-14 font-medium group-hover:opacity-70 transition-opacity" x-text="t(a, 'title')"></p>
               </div>
             </template>

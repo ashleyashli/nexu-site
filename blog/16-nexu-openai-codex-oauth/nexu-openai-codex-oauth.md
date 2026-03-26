@@ -4,11 +4,13 @@ slug: nexu-openai-codex-oauth
 category: Announcements
 title: "Use GPT Models in nexu with Your ChatGPT Subscription — No API Key Needed"
 date: "MAR 26 '26"
-cover: blog-release-v017.png
+cover: blog-cover-openai-en.webp
 featured: false
 ---
 
 # Use GPT Models in nexu with Your ChatGPT Subscription — No API Key Needed
+
+![Use GPT Models in nexu](blog-cover-openai-en.webp)
 
 > If you already pay for ChatGPT Plus or Pro, you can now connect GPT models to nexu through your existing OpenAI account. No separate API key, no billing setup, no developer console.
 
@@ -38,7 +40,7 @@ Now you can.
 
 No API key to copy. No billing to configure. The connection persists across app restarts.
 
-![nexu Settings showing OpenAI provider with Login with ChatGPT button and GPT model list](img/blog-openai-oauth-en.webp)
+![nexu Settings showing OpenAI provider with Login with ChatGPT button and GPT model list](blog-openai-oauth-en.webp)
 
 ## What You Get
 

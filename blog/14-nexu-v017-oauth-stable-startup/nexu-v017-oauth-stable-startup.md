@@ -4,11 +4,13 @@ slug: nexu-v017-oauth-stable-startup
 category: Announcements
 title: "nexu v0.1.7: One-Click OAuth & Rock-Solid Startup"
 date: "MAR 25 '26"
-cover: blog-release-v017.png
+cover: blog-cover-v017-en.webp
 featured: false
 ---
 
 # nexu v0.1.7: One-Click OAuth & Rock-Solid Startup
+
+![One-Click OAuth Log-In](blog-cover-v017-en.webp)
 
 > nexu — the simplest open-source OpenClaw desktop client — now lets you log in to OpenAI and MiniMax with one click, no API keys needed. v0.1.7 also eliminates white-screen, stuck-channel, and port-conflict issues, making startup reliable no matter how the app was last closed.
 

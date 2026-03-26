@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "site",
+  "redirects": [
+    { "source": "/", "destination": "/home.html", "permanent": false }
+  ]
+}
