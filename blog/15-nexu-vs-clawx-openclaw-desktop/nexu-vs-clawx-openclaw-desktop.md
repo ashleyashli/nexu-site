@@ -19,7 +19,7 @@ nexu — the simplest open-source OpenClaw desktop client — and ClawX share th
 | **In one sentence** | IM-first OpenClaw client for WeChat, Feishu, Slack & Discord with free hosted models during beta | Desktop interface for OpenClaw with built-in skill marketplace and cron scheduling |
 | **License** | MIT | MIT |
 | **GitHub stars** | ~1k (Mar 2026) | ~4.6k (Mar 2026) |
-| **Platforms** | macOS (Apple Silicon); Windows & Intel in development | macOS, Windows, Linux |
+| **Platforms** | macOS (Apple Silicon); Windows & Intel coming soon | macOS, Windows, Linux |
 | **Cost** | Free client; hosted models free during beta; BYOK anytime | Free client; BYOK only |
 
 ## IM Channel Support
@@ -54,9 +54,7 @@ ClawX includes a Cron page for defining time-based scheduled tasks with triggers
 
 ## Platform Support
 
-nexu currently supports macOS (Apple Silicon). Windows and Intel Mac support are in active development.
-
-ClawX supports macOS, Windows, and Linux with pre-built installation packages across all three platforms.
+nexu currently supports macOS (Apple Silicon), with Windows and Intel Mac support coming soon. ClawX offers macOS, Windows, and Linux builds today.
 
 ## Stability
 
@@ -74,7 +72,7 @@ ClawX users have reported UI lag when session count grows and gateway connection
 | Model access | Hosted (free during beta) + BYOK | BYOK only (10+ providers) |
 | Skills | Built-in OpenClaw + Feishu Skills; ClawHub | Skill marketplace; pre-installed doc/search skills |
 | Automation | IM-based always-on + background mode | Built-in Cron page with triggers and intervals |
-| Platforms | macOS (Apple Silicon) | macOS, Windows, Linux |
+| Platforms | macOS (Apple Silicon); Windows & Intel coming soon | macOS, Windows, Linux |
 | GitHub stars | ~1k | ~4.6k |
 | Architecture | Electron + launchd services (self-healing) | Electron 40+ / React 19; dual-process |
 | License | MIT | MIT |
@@ -82,11 +80,11 @@ ClawX users have reported UI lag when session count grows and gateway connection
 
 ## Which One Is Right for You?
 
-If your workflow runs through **WeChat or Feishu** — you want your AI agent in your phone chat, available on the go, with free hosted models to get started immediately — nexu is built for that.
+If your workflow runs through **WeChat, Feishu, Slack, or Discord** — you want your AI agent inside your existing chat apps, available on the go, with free hosted models to start immediately — nexu is built for exactly that.
 
-If you need **Windows or Linux** support today, or your workflow requires **time-based scheduled tasks** running from a desktop app, ClawX covers those requirements.
+nexu's core advantage is **IM-native deployment**: your agent lives where your conversations already happen, not in a separate desktop window. Combined with free hosted models during beta and one-click OAuth for OpenAI and MiniMax, you can go from install to a working AI agent in under 5 minutes.
 
-Both are MIT-licensed, both are OpenClaw-native, and both are evolving fast. The right choice depends on whether your workflow is IM-centered or desktop-centered.
+ClawX takes a desktop-first approach with built-in cron scheduling. Both are MIT-licensed, both are OpenClaw-native, and both are evolving fast.
 
 ## Try nexu
 

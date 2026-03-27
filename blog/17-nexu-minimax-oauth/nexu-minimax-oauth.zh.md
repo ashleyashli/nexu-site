@@ -14,7 +14,7 @@ featured: false
 
 ## 有什么变化
 
-nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **MiniMax OAuth**，简化的登录流程，一键将 MiniMax 账号连接到 nexu。Provider UI 重新设计，连接状态、可用模型、使用情况一目了然。
+nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **MiniMax OAuth**，一键将 MiniMax 账号连接到 nexu，登录后模型立刻出现在选择器中。
 
 之前要在 nexu 里接入 MiniMax，需要在 MiniMax 开发者平台获取 API Key、复制到设置里、还要排查格式问题。OAuth 把这些步骤全部省掉了。
 
@@ -22,7 +22,7 @@ nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **Mi
 
 **国内 MiniMax 用户**——如果你用 MiniMax 模型做中文任务（内容生成、客户支持、翻译），现在可以把这些模型接入 nexu，部署到微信和飞书渠道，无需管理 API Key。
 
-**正在评估国内 AI 供应商的团队**——如果你在比较不同模型供应商用于中国市场的工作流，MiniMax OAuth 让你在 nexu 中零配置成本地测试 MiniMax 模型，和 OpenAI、Z.AI 等供应商并行使用。
+**正在评估国内 AI 供应商的团队**——MiniMax OAuth 让你零配置接入，和 OpenAI、Z.AI 等供应商在同一个 nexu 实例中对比测试。
 
 ## 如何连接
 
@@ -37,8 +37,8 @@ nexu——最简单的开源龙虾桌面客户端——在 v0.1.7 中新增 **Mi
 ## 你会得到什么
 
 - MiniMax 模型在所有已连接的 IM 渠道中可用（微信、飞书、Slack、Discord）
-- 全新 Provider UI，清晰展示连接状态、模型列表和断开选项
-- 可以和其他 OAuth 供应商（OpenAI）及 BYOK 供应商同时使用
+- 全新 Provider UI：连接状态、可用模型、断开选项一目了然
+- 与 OpenAI OAuth、Z.AI、BYOK 等供应商并存，互不干扰
 - 随时可从 Settings → Providers → MiniMax → "Disconnect" 断开连接
 
 ## 不包含什么

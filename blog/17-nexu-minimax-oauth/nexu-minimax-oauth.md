@@ -14,7 +14,7 @@ featured: false
 
 ## What Changed
 
-nexu, the simplest open-source OpenClaw desktop client, adds **MiniMax OAuth** in v0.1.7 — a streamlined sign-in flow that connects your MiniMax account to nexu in one click. The provider UI has been redesigned for clarity, so you can see your connection status, active models, and usage at a glance.
+nexu, the simplest open-source OpenClaw desktop client, adds **MiniMax OAuth** in v0.1.7 — sign in with your MiniMax account and models appear in your selector immediately.
 
 Before this, connecting MiniMax models required obtaining an API key from the MiniMax developer platform, copying it into nexu's settings, and troubleshooting formatting issues. OAuth eliminates all of that.
 
@@ -22,7 +22,7 @@ Before this, connecting MiniMax models required obtaining an API key from the Mi
 
 **MiniMax users in China** — if you use MiniMax models for Chinese-language tasks (content generation, customer support, translation), you can now bring those models into nexu and deploy them across WeChat and Feishu without managing API keys.
 
-**Teams evaluating domestic AI providers** — if you're comparing model providers for Chinese-market workflows, MiniMax OAuth lets you test MiniMax models in nexu alongside other providers (OpenAI, Z.AI, etc.) with zero configuration overhead.
+**Teams evaluating domestic AI providers** — MiniMax OAuth gives you zero-config access to test MiniMax models side by side with OpenAI, Z.AI, and other providers in the same nexu instance.
 
 ## How to Connect
 
@@ -37,8 +37,8 @@ Before this, connecting MiniMax models required obtaining an API key from the Mi
 ## What You Get
 
 - MiniMax models available across all connected IM channels (WeChat, Feishu, Slack, Discord)
-- Polished provider UI showing connection status, model list, and disconnect option
-- Can be used alongside other OAuth providers (OpenAI) and BYOK providers simultaneously
+- Redesigned provider UI: connection status, available models, and disconnect option at a glance
+- Works alongside OpenAI OAuth, Z.AI, and BYOK providers without conflicts
 - Disconnect anytime from Settings → Providers → MiniMax → "Disconnect"
 
 ## What It Doesn't Do
