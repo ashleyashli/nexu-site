@@ -4,11 +4,13 @@ slug: nexu-vs-clawx-openclaw-desktop
 category: Guides
 title: "nexu vs ClawX: Which OpenClaw Desktop Client Is Right for You?"
 date: "MAR '26"
-cover: blog-vs-comparison.png
+cover: blog-cover-clawx-en.webp
 featured: false
 ---
 
 # nexu vs ClawX: Which OpenClaw Desktop Client Is Right for You?
+
+![nexu vs ClawX](blog-cover-clawx-en.webp)
 
 > Both are open-source desktop clients for OpenClaw. Both let you run AI agents without touching a terminal. They're built for different workflows.
 

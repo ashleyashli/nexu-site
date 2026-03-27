@@ -4,11 +4,13 @@ slug: nexu-minimax-oauth
 category: Announcements
 title: "nexu Now Supports MiniMax OAuth — Connect in One Click"
 date: "MAR 26 '26"
-cover: blog-release-v017.png
+cover: blog-cover-minimax-en.webp
 featured: false
 ---
 
 # nexu Now Supports MiniMax OAuth — Connect in One Click
+
+![nexu Adds MiniMax OAuth](blog-cover-minimax-en.webp)
 
 > One-click MiniMax model access in nexu. No API key, no manual configuration — sign in with your MiniMax account and start using MiniMax models across all your IM channels.
 
